@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'AlfaSlab';
+    src: url(../fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+}
+
+.font-alfa{
+    font-family: 'AlfaSlab';
+}
+
+body {
+    background-color: black;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-gray{
+    color: gray;
+}
+
+#nav{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+#nav-links>a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand{
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+#nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.margin-x{
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+#hero{
+    background-color:rgb(171, 120, 219) ;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title{
+    font-size: 60px;
+}
+
+.hero-text{
+    width: 500px;
+    text-align: center;
+}
+
+.card-group{
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 1vw;
+    background-color: #d3db78;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    height: 459px;
+    border-radius: 20px;
+    margin: 1vw;
+    overflow: hidden;
+
+}
+
+
+.card-image{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body{
+    padding: 0 1vw 0 1vw;
+}
+
+.card-text{
+    text-align: justify;
+    word-spacing:-2px;
+    height: 115px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1237px){
+    .card{
+        width: 450px;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .hero-text{
+        width: 300px;
+    }
+    #hero{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        height: 90vw;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .card-text{
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .card-text{
+        height: 35px;
+    }
+}
