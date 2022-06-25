@@ -1,0 +1,38 @@
+body{
+    background-image: url("https://www.hdwallpaperspulse.com/wp-content/uploads/2015/09/07/natural-beautiful-background.jpg");
+}
+div#whole-page{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 35vw;
+    width: 28vw;
+    height: 90vh;
+}
+
+.test-submit{
+    text-shadow: 0.5px 0.5px #07f;
+}
+.test-submit:hover{
+    border: 1px solid #0ff;
+    border-radius: 100%;
+    text-shadow: 0.5px 0.5px #0f0;
+}
+
+p{
+    line-height: 0px;
+    text-shadow: 1px 1px #f0f;
+}
+p.first{
+    font-size: 3vw;
+}
+p.second{
+    font-size: 2vw;
+}
+p.third{
+    font-size: 1.8vw;
+}
+
+

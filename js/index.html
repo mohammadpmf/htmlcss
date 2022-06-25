@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{
+            background-color: green;
+        }
+    </style>
+    <script>
+        function myfunction(){
+            document.getElementById('block').style.display='block'
+            document.getElementById('block').style.color='red'
+            document.getElementById('block').style.backgroundColor='blue'
+            document.getElementsByClassName('green')[0].style.backgroundColor='yellow'
+        }
+    </script>
+</head>
+<body>
+    
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onmouseover="document.getElementById('demo').style.border='red dotted 20px'">On mouse over!</button>
+<button id="block" type="button" onmousedown="document.getElementById('demo').style.border='green dotted 20px'">onmousedown</button>
+<button type="button" onmouseup="document.getElementById('demo').style.border='blue dotted 20px'">onmouseup</button>
+<button type="button" onmousewheel="document.getElementById('demo').style.border='yellow dotted 20px'">onmousewheel</button>
+<button type="button" ondblclick="document.getElementById('demo').style.border='purple dotted 20px'">ondblclick</button>
+<button id='dokmeh' type="button" onclick="document.getElementById('dokmeh').innerHTML='This text has been chaged'">change text</button>
+<button type="button" onclick="myfunction()">change display of onmousedown</button>
+
+<br>
+<p class="green">paragraph1</p>
+<p class="green">paragraph2</p>
+<p>paragraph3</p>
+<button type="button" onclick="myfunction()">test</button>
+
+</body>
+</html>
+
